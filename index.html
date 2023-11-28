@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardas</title>
+    <style>
+        #manoVardas {
+            color: black;
+            text-align: center;
+            transition: font-size 0.5s, color 0.5s;
+            cursor: pointer;
+        }
+
+        #manoVardas.raudonas {
+            color: red;
+            font-size: 10em;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="manoVardas" onclick="pakeistiStiliu(this)">Iveta</h1>
+
+    <script>
+        function pakeistiStiliu(elementas) {
+            elementas.classList.add('raudonas');
+        }
+    </script>
+</body>
+
+    <script src="script.js"></script>
+</body>
+</html>
